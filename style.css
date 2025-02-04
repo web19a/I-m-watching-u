@@ -5,24 +5,27 @@ body {
     height: 100vh;
     background-color: #f0f0f0;
     margin: 0;
+    overflow: hidden;
 }
 
 .eye {
-    width: 100px;
-    height: 100px;
-    background-color: white;
-    border: 2px solid black;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 20px;
+    border: 5px solid #000;
+    margin: 0 10px;
 }
 
 .pupil {
-    width: 30px;
-    height: 30px;
-    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: #000;
+    border: 3px solid skyblue;
     border-radius: 50%;
-    position: relative;
+    transform: translate(-50%, -50%);
 }
